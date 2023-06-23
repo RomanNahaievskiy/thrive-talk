@@ -406,13 +406,12 @@ body {
 }
 
 .section-main {
-  padding-top: 240px;
   padding-bottom: 75px;
   position: relative;
 }
-@media (max-width: 950px) {
+@media (max-width: 900px) {
   .section-main {
-    padding-top: 500px;
+    padding-top: 0px;
     padding-bottom: 50px;
   }
 }
@@ -426,39 +425,59 @@ body {
   background-color: #f4f9e2;
   z-index: -1;
 }
-@media (max-width: 950px) {
+@media (max-width: 900px) {
   .section-main::before {
     width: 100%;
   }
 }
 .section-main__container {
+  padding-top: 240px;
   position: relative;
   display: flex;
 }
+@media (max-width: 900.98px) {
+  .section-main__container {
+    padding-top: 400px;
+  }
+}
 .section-main__content {
   flex: 1 1 50%;
-}
-.section-main__image {
-  flex: 0 0 0px;
-}
-@media (max-width: 950px) {
-  .section-main__image {
-    flex-shrink: 1;
-  }
 }
 .section-main__image-dec {
   position: absolute;
   width: 971.96px;
   height: calc(100% + 36px);
-  right: -130px;
+  right: -280px;
   top: 0;
   z-index: -1;
 }
 @media (max-width: 1300px) {
   .section-main__image-dec {
-    width: 707.71px;
+    width: 939.96px;
     height: calc(100% + 36px - 200px);
-    top: 45px;
+    top: 145px;
+  }
+}
+@media (max-width: 1100px) {
+  .section-main__image-dec {
+    width: 889.96px;
+    height: calc(100% + 36px - 200px);
+    top: 145px;
+  }
+}
+@media (max-width: 987.98px) {
+  .section-main__image-dec {
+    width: 789.96px;
+    height: calc(100% + 36px - 200px);
+    top: 195px;
+  }
+}
+@media (max-width: 900.98px) {
+  .section-main__image-dec {
+    width: 689.96px;
+    height: calc(100% + 36px - 200px);
+    top: 0px;
+    right: -160px;
   }
 }
 .section-main__image-dec:before, .section-main__image-dec::after {
@@ -534,7 +553,7 @@ body {
   max-width: 484px;
   color: #22356f;
 }
-@media (max-width: 950px) {
+@media (max-width: 900px) {
   .content {
     max-width: 100%;
   }
@@ -563,7 +582,7 @@ body {
   display: flex;
   justify-content: start;
 }
-@media (max-width: 950px) {
+@media (max-width: 900px) {
   .content__list {
     width: 100%;
     justify-content: center;

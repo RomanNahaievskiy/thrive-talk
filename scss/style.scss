@@ -322,11 +322,10 @@ body {
     }
 }
 .section-main {
-    padding-top: 240px;
     padding-bottom: 75px;
     position: relative;
-    @media (max-width: 950px) {
-        padding-top: 500px;
+    @media (max-width: 900px) {
+        padding-top: 0px;
         padding-bottom: 50px;
     }
     &::before {
@@ -338,15 +337,19 @@ body {
         left: 0;
         background-color: #f4f9e2;
         z-index: -1;
-        @media (max-width: 950px) {
+        @media (max-width: 900px) {
             width: 100%;
         }
     }
     // .section-main__container
 
     &__container {
+        padding-top: 240px;
         position: relative;
         display: flex;
+        @media (max-width: 900.98px) {
+            padding-top: 400px;
+        }
     }
 
     // .section-main__content
@@ -357,26 +360,35 @@ body {
 
     // .section-main__image-container
 
-    &__image {
-        flex: 0 0 0px;
-        @media (max-width: 950px) {
-            flex-shrink: 1;
-        }
-    }
-
     // .section-main__image
 
     &__image-dec {
         position: absolute;
         width: 971.96px;
         height: calc(100% + 36px);
-        right: -130px;
+        right: -280px;
         top: 0;
         z-index: -1;
         @media (max-width: 1300px) {
-            width: 707.71px;
+            width: 939.96px;
             height: calc(100% + 36px - 200px);
-            top: 45px;
+            top: 145px;
+        }
+        @media (max-width: 1100px) {
+            width: 889.96px;
+            height: calc(100% + 36px - 200px);
+            top: 145px;
+        }
+        @media (max-width: 987.98px) {
+            width: 789.96px;
+            height: calc(100% + 36px - 200px);
+            top: 195px;
+        }
+        @media (max-width: 900.98px) {
+            width: 689.96px;
+            height: calc(100% + 36px - 200px);
+            top: 0px;
+            right: -160px;
         }
         &:before,
         &::after {
@@ -443,7 +455,7 @@ body {
 .content {
     max-width: 484px;
     color: $mainColor;
-    @media (max-width: 950px) {
+    @media (max-width: 900px) {
         max-width: 100%;
     }
     // .logo
@@ -484,7 +496,7 @@ body {
     &__list {
         display: flex;
         justify-content: start;
-        @media (max-width: 950px) {
+        @media (max-width: 900px) {
             width: 100%;
             justify-content: center;
         }
