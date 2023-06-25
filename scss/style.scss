@@ -364,6 +364,11 @@ body {
 
     &__also {
     }
+
+    // .page__contact
+
+    &__contact {
+    }
 }
 //========================================================================================================================================================
 // rest sections as blocks
@@ -1017,7 +1022,8 @@ body {
 //========================================================================================================================================================
 // Also
 
-.also {
+.also,
+.contact {
     // .also__container
 
     &__container {
@@ -1094,6 +1100,56 @@ body {
     // .also__link
 
     &__link {
+    }
+}
+//========================================================================================================================================================
+// Contact
+
+.contact {
+    // .contact__container
+
+    &__container {
+    }
+
+    // .contact__content
+
+    &__content {
+        background-color: $mainColor;
+    }
+
+    // .contact__title
+
+    &__title {
+        color: #fff;
+    }
+    //.contact__header
+    &__header {
+        color: #fff;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 0%;
+        letter-spacing: -0.64px;
+    }
+    // .contact__text
+
+    &__text {
+        color: #fff;
+    }
+
+    // .contact__actions
+
+    &__actions {
+    }
+
+    // .contact__link
+
+    &__link {
+        color: $hColor;
+    }
+
+    // .contact__image
+
+    &__image {
     }
 }
 
