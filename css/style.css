@@ -130,6 +130,11 @@ body {
   font-family: "Larsseit", serif;
 }
 
+@media (max-width: 767.98px) {
+  body._lock {
+    overflow: hidden;
+  }
+}
 .logo {
   color: #62d0df;
   font-weight: 900;
@@ -162,6 +167,11 @@ body {
   }
 }
 
+.header._scroll {
+  background-color: rgba(255, 255, 255, 0.968627451);
+  transition: all 0.5s ease 0s;
+}
+
 .header {
   z-index: 999;
   position: fixed;
@@ -170,6 +180,8 @@ body {
   left: 0;
   padding-top: 24px;
   padding-bottom: 24px;
+  background-color: transparent;
+  transition: all 0.5s ease 0s;
 }
 @media (max-width: 419.98px) {
   .header {
@@ -275,9 +287,11 @@ body {
     left: -100%;
     overflow: scroll;
     background-color: #f9b640;
+    transition: all 0.3s ease 0s;
   }
   .menu__body._active {
     left: 0;
+    transition: all 0.3s ease 0s;
   }
 }
 .menu__list {
@@ -601,7 +615,7 @@ body {
 }
 .content__list {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 @media (max-width: 900px) {
   .content__list {
@@ -1128,6 +1142,67 @@ body {
 .contact-us__link {
   color: #62d0df;
 }
+.contacts__container {
+  max-width: 100%;
+  padding: 0;
+  display: flex;
+  -moz-column-gap: 28px;
+       column-gap: 28px;
+}
+@media (max-width: 767.98px) {
+  .contacts__container {
+    flex-direction: column;
+  }
+}
+.contacts__image {
+  flex: 0 1 39.58%;
+  position: relative;
+  padding-bottom: 26.388889%; /* 380/1440 */
+}
+.contacts__image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contacts__content {
+  padding: 98px 30px;
+}
+.contacts-columns {
+  display: flex;
+  gap: 23px;
+  justify-content: space-around;
+}
+@media (max-width: 767.98px) {
+  .contacts-columns {
+    flex-direction: column;
+  }
+}
+.contacts-columns__item {
+  flex: 1 1 27.49%;
+}
+.contacts-columns__title {
+  text-transform: uppercase;
+  color: #22356f;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: -0.084px;
+}
+.contacts-columns__title:not(:last-child) {
+  margin-bottom: 45px;
+}
+.contacts-columns__text {
+  color: rgba(34, 53, 111, 0.5);
+  font-size: 14px;
+  font-family: Larsseit;
+  line-height: 1.6;
+  letter-spacing: -0.084px;
+}
+
 .footer {
   background-color: #62d0df;
   padding: 24px 0;
