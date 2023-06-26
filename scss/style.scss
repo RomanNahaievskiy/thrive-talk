@@ -1023,7 +1023,7 @@ body {
 // Also
 
 .also,
-.contact {
+.contact-us {
     // .also__container
 
     &__container {
@@ -1105,16 +1105,24 @@ body {
 //========================================================================================================================================================
 // Contact
 
-.contact {
+.contact-us {
     // .contact__container
 
     &__container {
+        @media (max-width: 989.98px) {
+            flex-direction: column-reverse;
+        }
     }
 
     // .contact__content
 
     &__content {
+        row-gap: 60px;
         background-color: $mainColor;
+        @media (max-width: 989.98px) {
+            margin: 0 -30px;
+            padding: 30px 30px;
+        }
     }
 
     // .contact__title
@@ -1127,7 +1135,7 @@ body {
         color: #fff;
         font-size: 64px;
         font-weight: 700;
-        line-height: 0%;
+        line-height: 1.5;
         letter-spacing: -0.64px;
     }
     // .contact__text

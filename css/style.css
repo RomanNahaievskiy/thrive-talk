@@ -1028,26 +1028,26 @@ body {
 }
 
 .also__container,
-.contact__container {
+.contact-us__container {
   max-width: 100%;
   display: flex;
   padding: 0;
 }
 @media (max-width: 989.98px) {
   .also__container,
-  .contact__container {
+  .contact-us__container {
     flex-direction: column;
     padding: 0 30px;
   }
 }
 .also__image,
-.contact__image {
+.contact-us__image {
   flex: 0 1 33.333333%; /* 480/1440 */
   padding-bottom: 55%;
   position: relative;
 }
 .also__image img,
-.contact__image img {
+.contact-us__image img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1058,13 +1058,13 @@ body {
 }
 @media (max-width: 989.98px) {
   .also__image,
-  .contact__image {
+  .contact-us__image {
     padding-bottom: 28.068966%;
     margin: 0 -30px;
   }
 }
 .also__content,
-.contact__content {
+.contact-us__content {
   flex: 1 1 58.73%;
   padding: 103px 12.152778% 42px 7.36%; /* 175px/1440 */
   display: flex;
@@ -1074,19 +1074,19 @@ body {
 }
 @media (max-width: 989.98px) {
   .also__content,
-  .contact__content {
+  .contact-us__content {
     padding: 50px 0;
   }
 }
 .also__title,
-.contact__title {
+.contact-us__title {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.96px;
 }
 .also__text,
-.contact__text {
+.contact-us__text {
   color: #22356f;
   font-size: 36px;
   font-weight: 700;
@@ -1094,26 +1094,38 @@ body {
   letter-spacing: -0.36px;
 }
 .also__actions a.btn-link,
-.contact__actions a.btn-link {
+.contact-us__actions a.btn-link {
   padding: 0;
 }
-.contact__content {
+@media (max-width: 989.98px) {
+  .contact-us__container {
+    flex-direction: column-reverse;
+  }
+}
+.contact-us__content {
+  row-gap: 60px;
   background-color: #22356f;
 }
-.contact__title {
+@media (max-width: 989.98px) {
+  .contact-us__content {
+    margin: 0 -30px;
+    padding: 30px 30px;
+  }
+}
+.contact-us__title {
   color: #fff;
 }
-.contact__header {
+.contact-us__header {
   color: #fff;
   font-size: 64px;
   font-weight: 700;
-  line-height: 0%;
+  line-height: 1.5;
   letter-spacing: -0.64px;
 }
-.contact__text {
+.contact-us__text {
   color: #fff;
 }
-.contact__link {
+.contact-us__link {
   color: #62d0df;
 }
 .footer {
