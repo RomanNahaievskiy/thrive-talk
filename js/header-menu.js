@@ -29,7 +29,7 @@ window.addEventListener('scroll', menuBgHlOnScrl);
 // Браузер сказав , що ця функція тормозить , адже переписує стилі , краще передати цей функціонал в CSS
 function menuBgHlOnScrl() {
 
-    if ((window.scrollY + 2 * parseFloat(headerStyles.height)) >= parseFloat(pageFirstChildElStyles.height)) { // парсимо число із рядків pageFirstChildElStyles.height
+    if ((window.scrollY + parseFloat(headerStyles.height)) >= 100) { // парсимо число із рядків pageFirstChildElStyles.height
         header.classList.add('_scroll');
     } else {
         header.classList.remove('_scroll');

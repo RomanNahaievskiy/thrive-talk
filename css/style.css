@@ -136,6 +136,9 @@ body {
   }
 }
 .logo {
+  display: inline-block;
+  max-width: 100px;
+  justify-self: left;
   color: #62d0df;
   font-weight: 900;
   font-size: 24px;
@@ -739,41 +742,20 @@ body {
   display: flex;
   justify-content: center;
 }
-@media (any-hover: hover) {
-  .about-us__links:hover .about-us__link {
-    opacity: 1;
-    visibility: visible;
-    transform: translate(0, 0px);
-    transition: all 0.3s ease 0s;
-  }
-}
-@media (max-width: 900px) {
-  .about-us__links {
-    opacity: 1;
-    visibility: visible;
-    transform: translate(0, 0px);
-    transition: all 0.3s ease 0s;
-  }
-}
 .about-us__link {
-  transition: all 0.3s ease 0s;
-  transform: translate(0, -50px);
-  opacity: 0;
-  visibility: hidden;
   display: inline-block;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 2;
-  font-family: Larsseit;
   letter-spacing: 0.96px;
   color: #22356f;
   cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
-@media (max-width: 900px) {
-  .about-us__link {
-    opacity: 1;
-    visibility: visible;
-    transform: translate(0, 0px);
+@media (any-hover: hover) {
+  .about-us__link:hover {
+    color: #e9b730;
+    transform: scale(1.3);
     transition: all 0.3s ease 0s;
   }
 }
